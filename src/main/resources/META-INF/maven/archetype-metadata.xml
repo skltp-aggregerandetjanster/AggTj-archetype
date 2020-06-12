@@ -7,7 +7,7 @@
     <requiredProperty key="schemas_package"/>
     <requiredProperty key="kort_service_namn"/>
     <requiredProperty key="request_class"/>
-    <requiredProperty key="responce_class"/>
+    <requiredProperty key="response_class"/>
   </requiredProperties>
   <fileSets>
     <fileSet filtered="true" encoding="UTF-8">

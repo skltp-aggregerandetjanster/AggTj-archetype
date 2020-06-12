@@ -9,7 +9,7 @@ import se.skltp.aggregatingservices.AgServiceFactoryBase;
 
 @Log4j2
 public class ${kort_service_namn}AgpServiceFactoryImpl extends
-    AgServiceFactoryBase<${request_class}, ${responce_class}>{
+    AgServiceFactoryBase<${request_class}, ${response_class}>{
 
 @Override
 public String getPatientId(${request_class}queryObject){
@@ -22,10 +22,10 @@ public String getSourceSystemHsaId(${request_class}queryObject){
     }
 
 @Override
-public ${responce_class}aggregateResponse(
-    List<${responce_class}>aggregatedResponseList){
+public ${response_class} aggregateResponse(
+    List<${response_class}>aggregatedResponseList){
 
-    ${responce_class}aggregatedResponse=new ${responce_class}();
+    ${response_class}aggregatedResponse=new ${response_class}();
 
     /*change_it*/
 

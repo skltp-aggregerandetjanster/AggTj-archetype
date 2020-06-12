@@ -27,6 +27,14 @@
     </dependency>
 
     <dependency>
+      <groupId>${groupId}</groupId>
+      <artifactId>${rootArtifactId}-teststub</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
@@ -43,6 +51,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
+      <exclusions>
+       <exclusion>
+          <groupId>com.vaadin.external.google</groupId>
+          <artifactId>android-json</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>se.skltp.agp</groupId>
@@ -50,6 +64,16 @@
       <version>${agp-parent.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>se.skltp.agp</groupId>
+      <artifactId>agp-application</artifactId>
+      <classifier>tests</classifier>
+      <type>test-jar</type>
+      <version>${agp-parent.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+
   </dependencies>
 
 
@@ -82,7 +106,4 @@
       </plugin>
     </plugins>
   </build>
-
-
-
 </project>
