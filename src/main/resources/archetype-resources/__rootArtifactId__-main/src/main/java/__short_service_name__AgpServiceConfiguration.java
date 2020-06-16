@@ -1,7 +1,10 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package};
+#macro( ccase $str )$str.toLowerCase()#end
+#set($short_service_name_lc = "#ccase($short_service_name)")
+
+    package ${package};
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -9,25 +12,26 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableConfigurationProperties
-@ConfigurationProperties(prefix = "${kort_service_namn}")
-public class ${kort_service_namn}AgpServiceConfiguration extends se.skltp.aggregatingservices.configuration.AgpServiceConfiguration {
+@ConfigurationProperties(prefix = "${short_service_name_lc}")
+public class ${short_service_name}AgpServiceConfiguration extends se.skltp.aggregatingservices.configuration.AgpServiceConfiguration {
 
-public static final String SCHEMA_PATH = "CHANGE_IT";
+public static final String SCHEMA_PATH = "/schemas/CHANGE_IT/.wsdl";
 
-  public ${kort_service_namn}AgpServiceConfiguration() {
+  public ${short_service_name}AgpServiceConfiguration() {
 
     setServiceName("CHANGE_IT");
     setTargetNamespace("urn:riv:CHANGE_IT");
 
     // Set inbound defaults
-    setInboundServiceURL("http://localhost:CHANGE_IT/${artifactId}/CHANGE_IT");
+    setInboundServiceURL("http://localhost:CHANGE_IT/CHANGE_IT");
     setInboundServiceWsdl(SCHEMA_PATH);
     setInboundServiceClass(CHANGE_IT.class.getName());
+    setInboundPortName(CHANGE_IT.toString());
 
     // Set outbound defaults
-    setOutboundServiceURL("http://localhost:CHANGE_IT/vp/${kort_service_namn}");
     setOutboundServiceWsdl(SCHEMA_PATH);
     setOutboundServiceClass(CHANGE_IT.class.getName());
+    setOutboundPortName(CHANGE_IT.toString());
 
     // FindContent
     setEiServiceDomain("CHANGE_IT");
@@ -37,7 +41,7 @@ public static final String SCHEMA_PATH = "CHANGE_IT";
     setTakContract("CHANGE_IT");
 
     // Set service factory
-    setServiceFactoryClass(${kort_service_namn}AgpServiceFactoryImpl.class.getName());
+    setServiceFactoryClass(${short_service_name}AgpServiceFactoryImpl.class.getName());
     }
 
 

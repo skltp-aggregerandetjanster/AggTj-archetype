@@ -8,24 +8,23 @@ import lombok.extern.log4j.Log4j2;
 import se.skltp.aggregatingservices.AgServiceFactoryBase;
 
 @Log4j2
-public class ${kort_service_namn}AgpServiceFactoryImpl extends
+public class ${short_service_name}AgpServiceFactoryImpl extends
     AgServiceFactoryBase<${request_class}, ${response_class}>{
 
 @Override
-public String getPatientId(${request_class}queryObject){
+public String getPatientId(${request_class} queryObject){
     return /*change_it*/
     }
 
 @Override
-public String getSourceSystemHsaId(${request_class}queryObject){
+public String getSourceSystemHsaId(${request_class} queryObject){
     return /*change_it*/
     }
 
 @Override
-public ${response_class} aggregateResponse(
-    List<${response_class}>aggregatedResponseList){
+public ${response_class} aggregateResponse(List<${response_class}> aggregatedResponseList ){
 
-    ${response_class}aggregatedResponse=new ${response_class}();
+    ${response_class} aggregatedResponse=new ${response_class}();
 
     /*change_it*/
 

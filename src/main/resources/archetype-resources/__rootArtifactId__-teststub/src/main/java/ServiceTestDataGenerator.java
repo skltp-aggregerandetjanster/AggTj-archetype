@@ -43,7 +43,7 @@ public class ServiceTestDataGenerator extends TestDataGenerator {
 		return /*change it*/;
 	}
 
-	public abstract Object createRequest(String patientId, String sourceSystemHSAId){
+	public Object createRequest(String patientId, String sourceSystemHSAId){
 		${request_class} outcomeType = new ${request_class}();
 
 		/*change it*/

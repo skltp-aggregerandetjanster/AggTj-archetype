@@ -5,7 +5,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <requiredProperties>
     <requiredProperty key="schemas_package"/>
-    <requiredProperty key="kort_service_namn"/>
+    <requiredProperty key="short_service_name"/>
     <requiredProperty key="request_class"/>
     <requiredProperty key="response_class"/>
   </requiredProperties>
@@ -60,16 +60,16 @@
             <include>**/*.java</include>
           </includes>
         </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
           <directory>src/assembly</directory>
           <includes>
             <include>**/*.xml</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>src/test</directory>
-          <includes>
-            <include>**/*.java</include>
           </includes>
         </fileSet>
       </fileSets>
