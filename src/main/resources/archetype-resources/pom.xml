@@ -12,7 +12,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
   <parent>
     <artifactId>agp-parent</artifactId>
     <groupId>se.skltp.agp</groupId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-RC1</version>
   </parent>
 
   	<groupId>${groupId}</groupId>
@@ -22,7 +22,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <name>${artifactId}</name>
 
   <properties>
-    <agp-parent.version>0.0.1-SNAPSHOT</agp-parent.version>
+    <agp-parent.version>1.0.0-RC1</agp-parent.version>
     <apache-cfx.version>3.2.7</apache-cfx.version>
   </properties>
 
