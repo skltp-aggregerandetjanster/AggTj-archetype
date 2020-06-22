@@ -1,6 +1,6 @@
-    #set( $symbol_pound = '#' )
-    #set( $symbol_dollar = '$' )
-    #set( $symbol_escape = '\' )
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
 package ${package};
 
 import org.junit.runner.RunWith;
@@ -12,7 +12,6 @@ import se.skltp.aggregatingservices.data.TestDataGenerator;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest
 public class ${short_service_name}CreateAggregatedResponseTest extends CreateAggregatedResponseTest {
 
   private static ${short_service_name}AgpServiceConfiguration configuration = new ${short_service_name}AgpServiceConfiguration();

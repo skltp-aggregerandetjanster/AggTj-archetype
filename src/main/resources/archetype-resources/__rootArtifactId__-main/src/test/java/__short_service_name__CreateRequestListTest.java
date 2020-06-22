@@ -12,7 +12,6 @@ import se.skltp.aggregatingservices.tests.CreateFindContentTest;
 import se.skltp.aggregatingservices.data.TestDataGenerator;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest
 public class ${short_service_name}CreateRequestListTest extends CreateFindContentTest {
 
   private static ${short_service_name}AgpServiceConfiguration configuration = new ${short_service_name}AgpServiceConfiguration();
