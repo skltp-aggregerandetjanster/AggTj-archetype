@@ -4,7 +4,7 @@
 
   <groupId>se.skltp.agp</groupId>
   <artifactId>aggregerade-tjanst-parent-archetype</artifactId>
-  <version>1.0.0-RC2-SNAPSHOT</version>
+  <version>1.0.0-RC2</version>
   <packaging>maven-archetype</packaging>
 
   <name>Aggregerade-tjanst-parent-archetype</name>
@@ -45,7 +45,7 @@
     <url>https://github.com/skltp-incubator/AggTj-archetype.git</url>
     <connection>scm:git:https://github.com:443/skltp-incubator/AggTj-archetype.git</connection>
     <developerConnection>scm:git:https://github.com:443/skltp-incubator/AggTj-archetype.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v1.0.0-RC2</tag>
   </scm>
 
 
