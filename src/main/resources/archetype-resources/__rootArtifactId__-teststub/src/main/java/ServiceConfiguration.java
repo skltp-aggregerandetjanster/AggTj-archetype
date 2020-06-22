@@ -2,7 +2,7 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 #macro( ccase $str )$str.toLowerCase()#end
-#set($short_service_name_lc = "#ccase($short_service_name)")
+#set($service_prefix = "#ccase($rootArtifactId)" + ".v" + "$contract_version")
 package ${package};
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -12,6 +12,18 @@ import se.skltp.aggregatingservices.config.TestProducerConfiguration;
 
 @Configuration
 @EnableConfigurationProperties
-@ConfigurationProperties(prefix="${short_service_name_lc}.teststub")
+@ConfigurationProperties(prefix="${service_prefix}.teststub")
 public class ServiceConfiguration extends TestProducerConfiguration {
+
+  public static final String SCHEMA_PATH = "/schemas/CHANGE_IT/.wsdl";
+
+  public ServiceConfiguration() {
+    setProducerAddress("CHANGE_IT");
+    setServiceClass(CHANGE_IT.class.getName());
+    setServiceNamespace("urn:riv:CHANGE_IT");
+    setPortName(CHANGE_IT.toString());
+    setWsdlPath(SCHEMA_PATH);
+    setTestDataGeneratorClass(ServiceTestDataGenerator.class.getName());
+  }
+
 }

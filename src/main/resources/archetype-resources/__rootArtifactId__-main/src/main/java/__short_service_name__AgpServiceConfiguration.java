@@ -2,9 +2,8 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 #macro( ccase $str )$str.toLowerCase()#end
-#set($short_service_name_lc = "#ccase($short_service_name)")
-
-    package ${package};
+#set($service_prefix = "#ccase($rootArtifactId)" + ".v" + "$contract_version")
+package ${package};
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -12,14 +11,14 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableConfigurationProperties
-@ConfigurationProperties(prefix = "${short_service_name_lc}")
+@ConfigurationProperties(prefix = "${service_prefix}")
 public class ${short_service_name}AgpServiceConfiguration extends se.skltp.aggregatingservices.configuration.AgpServiceConfiguration {
 
 public static final String SCHEMA_PATH = "/schemas/CHANGE_IT/.wsdl";
 
   public ${short_service_name}AgpServiceConfiguration() {
 
-    setServiceName("CHANGE_IT");
+    setServiceName("${rootArtifactId}_v${contract_version}");
     setTargetNamespace("urn:riv:CHANGE_IT");
 
     // Set inbound defaults

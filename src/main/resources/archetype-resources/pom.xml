@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOING!
-[soi-toolkit.gen.version=0.6.2-SNAPSHOT]
-[soi-toolkit.gen.type=services]
-[soi-toolkit.gen.createDate=2014-10-06T12:43:33.373+02:00]
-[soi-toolkit.gen.artifactId=GetAggregatedObservation]
---><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
   <parent>
     <artifactId>agp-parent</artifactId>
     <groupId>se.skltp.agp</groupId>
-    <version>1.0.0-RC1</version>
+    <version>3.0.0-RC1</version>
   </parent>
 
   	<groupId>${groupId}</groupId>
@@ -22,7 +17,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <name>${artifactId}</name>
 
   <properties>
-    <agp-parent.version>1.0.0-RC1</agp-parent.version>
+    <agp-parent.version>3.0.0-RC1</agp-parent.version>
     <apache-cfx.version>3.2.7</apache-cfx.version>
   </properties>
 
@@ -32,6 +27,5 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 			<developerConnection></developerConnection>
       <tag>HEAD</tag>
   	</scm>
-
 
   </project>
