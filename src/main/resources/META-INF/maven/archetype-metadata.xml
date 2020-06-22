@@ -6,7 +6,6 @@
   <requiredProperties>
     <requiredProperty key="schemas_package"/>
     <requiredProperty key="short_service_name"/>
-    <requiredProperty key="contract_version"/>
     <requiredProperty key="request_class"/>
     <requiredProperty key="response_class"/>
   </requiredProperties>

@@ -9,7 +9,7 @@
   <dependencySets>
     <dependencySet>
       <includes>
-        <include>${groupId}:${rootArtifactId}-v${contract_version}:jar</include>
+        <include>${groupId}:${rootArtifactId}-main:jar</include>
         <include>${groupId}:${rootArtifactId}-schemas:jar</include>
       </includes>
       <useProjectArtifact>true</useProjectArtifact>

@@ -1,8 +1,8 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-#macro( ccase $str )$str.toLowerCase()#end
-#set($service_prefix = "#ccase($rootArtifactId)" + ".v" + "$contract_version")
+#macro( ccase $str )$str.toLowerCase().replace("-", ".")#end
+#set($service_prefix = "#ccase($rootArtifactId)")
 package ${package};
 
 import org.springframework.boot.context.properties.ConfigurationProperties;

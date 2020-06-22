@@ -1,8 +1,8 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-#macro( ccase $str )$str.toLowerCase()#end
-#set($service_prefix = "#ccase($rootArtifactId)" + ".v" + "$contract_version")
+#macro( ccase $str )$str.toLowerCase().replace("-", ".")#end
+#set($service_prefix = "#ccase($rootArtifactId)")
 package ${package};
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -18,7 +18,7 @@ public static final String SCHEMA_PATH = "/schemas/CHANGE_IT/.wsdl";
 
   public ${short_service_name}AgpServiceConfiguration() {
 
-    setServiceName("${rootArtifactId}_v${contract_version}");
+    setServiceName("${rootArtifactId}");
     setTargetNamespace("urn:riv:CHANGE_IT");
 
     // Set inbound defaults
