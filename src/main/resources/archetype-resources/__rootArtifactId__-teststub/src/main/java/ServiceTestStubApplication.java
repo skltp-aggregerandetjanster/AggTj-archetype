@@ -14,5 +14,4 @@ public class ServiceTestStubApplication {
   public static void main(String[] args) {
     new SpringApplicationBuilder(ServiceTestStubApplication.class).run(args);
   }
-
 }
