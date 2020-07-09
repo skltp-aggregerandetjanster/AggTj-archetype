@@ -21,12 +21,4 @@ public class ${short_service_name}CreateFindContentTest extends CreateFindConten
     super(testDataGenerator, agpServiceFactory, configuration);
   }
 
-  @BeforeClass
-  public static void before() {
-    configuration = new ${short_service_name}AgpServiceConfiguration();
-    agpServiceFactory = new ${short_service_name}AgpServiceFactoryImpl();
-    agpServiceFactory.setAgpServiceConfiguration(configuration);
-  }
-
-
 }
