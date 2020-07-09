@@ -4,11 +4,9 @@
 package ${package};
 
 import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import se.skltp.aggregatingservices.api.AgpServiceFactory;
 import se.skltp.aggregatingservices.tests.CreateAggregatedResponseTest;
-import se.skltp.aggregatingservices.data.TestDataGenerator;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)

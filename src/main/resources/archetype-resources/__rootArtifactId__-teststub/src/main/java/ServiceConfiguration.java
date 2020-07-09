@@ -18,12 +18,13 @@ public class ServiceConfiguration extends TestProducerConfiguration {
   public static final String SCHEMA_PATH = "/schemas/CHANGE_IT/.wsdl";
 
   public ServiceConfiguration() {
-    setProducerAddress("CHANGE_IT");
+    setProducerAddress("http://localhost:8083/vp");
     setServiceClass(CHANGE_IT.class.getName());
     setServiceNamespace("urn:riv:CHANGE_IT");
     setPortName(CHANGE_IT.toString());
     setWsdlPath(SCHEMA_PATH);
     setTestDataGeneratorClass(ServiceTestDataGenerator.class.getName());
+    setServiceTimeout(27000);
   }
 
 }
