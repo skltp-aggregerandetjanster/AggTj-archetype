@@ -11,24 +11,24 @@ import se.skltp.aggregatingservices.AgServiceFactoryBase;
 public class ${short_service_name}AgpServiceFactoryImpl extends
     AgServiceFactoryBase<${request_class}, ${response_class}>{
 
-@Override
-public String getPatientId(${request_class} queryObject){
+  @Override
+  public String getPatientId(${request_class} queryObject){
     return /*change_it*/
-    }
+  }
 
-@Override
-public String getSourceSystemHsaId(${request_class} queryObject){
+  @Override
+  public String getSourceSystemHsaId(${request_class} queryObject){
     return /*change_it*/
-    }
+  }
 
-@Override
-public ${response_class} aggregateResponse(List<${response_class}> aggregatedResponseList ){
+  @Override
+  public ${response_class} aggregateResponse(List<${response_class}> aggregatedResponseList ){
 
     ${response_class} aggregatedResponse=new ${response_class}();
 
     /*change_it*/
 
     return aggregatedResponse;
-    }
+  }
 }
 

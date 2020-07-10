@@ -37,15 +37,15 @@ public class ServiceTestDataGenerator extends TestDataGenerator {
 		log.debug("Created ResponseItem for logical-address {}, registeredResidentId {} and businessObjectId {}",
 				new Object[]{logicalAddress, registeredResidentId, businessObjectId});
 
-		/*change it*/
+		/*change_it*/
 
-		return /*change it*/;
+		return /*change_it*/;
 	}
 
 	public Object createRequest(String patientId, String sourceSystemHSAId){
 		${request_class} requestType = new ${request_class}();
 
-		/*change it*/
+		/*change_it*/
 
 		return requestType;
 	}
