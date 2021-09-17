@@ -3,11 +3,11 @@
 #set( $symbol_escape = '\' )
 package ${package};
 
-import org.junit.runner.RunWith;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import se.skltp.aggregatingservices.tests.CreateRequestListTest;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+@ExtendWith(SpringExtension.class)
 public class ${short_service_name}CreateRequestListTest extends CreateRequestListTest {
 
   public ${short_service_name}CreateRequestListTest() {
