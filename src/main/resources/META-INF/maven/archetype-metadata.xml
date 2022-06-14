@@ -17,8 +17,9 @@
       </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
-      <directory>test/non-functional</directory>
+      <directory>jenkins</directory>
       <includes>
+        <include>**/Jenkinsfile</include>
       </includes>
     </fileSet>
   </fileSets>
