@@ -19,7 +19,7 @@
     <fileSet filtered="true" encoding="UTF-8">
       <directory>jenkins</directory>
       <includes>
-        <include>**/Jenkinsfile</include>
+        <include>*.yml</include>
       </includes>
     </fileSet>
   </fileSets>
