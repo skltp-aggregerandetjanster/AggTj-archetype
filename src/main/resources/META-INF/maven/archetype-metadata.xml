@@ -17,9 +17,9 @@
       </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
-      <directory>jenkins</directory>
+      <directory/>
       <includes>
-        <include>*.yml</include>
+        <include>Jenkins.properties</include>
       </includes>
     </fileSet>
   </fileSets>
